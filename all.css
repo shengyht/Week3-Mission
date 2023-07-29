@@ -57,34 +57,347 @@ img {
   height: auto;
 }
 
-*, *::before, *::after {
+*, * ::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
-.container {
-  width: 1296px;
+body{
+  font-family: "Source Han Sans TW";
+  line-height: 1.5;
+}
+.container{
+  width:1296px;
   margin: 0 auto;
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.logo {
-  width: 80px;
-  height: 72px;
-}
-
-.header-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.header{
   background-color: #AA0601;
 }
-/*# sourceMappingURL=all.css.map */
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:16px 0;
+}
+.logo{
+  width: 80px;
+  height: 48.57px;
+}
+.header-ul{
+  display: flex;
+}
+.header-li{
+  text-decoration: none;
+  margin-left: 64px;
+  color:#ffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.banner{
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+  background-size: cover;
+  width:100%;
+  height: 787px;
+}
+.slogan{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: right;
+  padding-top: 296px;
+}
+.slogan p{
+  color:#650300;
+  font-weight: 400;
+  font-size: 36px;
+
+}
+.slogan h2{
+  color:#650300;
+  font-weight: 700;
+  font-size: 64px;
+}
+.buy{
+  background-color: #AA0601;
+  color:#ffffff;
+  padding:6px 12px;
+  text-decoration: none;
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #FBF2F2;
+  text-align: center;
+}
+.intro h2{
+  font-size: 48px;
+  color:#650300;
+  font-weight: 700;
+  padding-bottom: 32.33px;
+}
+.intro-ul{
+  display: flex;
+  justify-content: space-between;
+}
+.intro-li{
+  width:306px;
+}
+.intro-li h3{
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 8px;
+  color:#650300;
+}
+.intro-li p{
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+.classic{
+  padding-top:80px;
+  padding-bottom: 80px;
+}
+.classic-title{
+  text-align: center;
+  font-size: 48px;
+  color:#650300;
+  padding-bottom: 48px;
+  font-weight: 700;
+}
+.classic-ul{
+  display: flex;
+  justify-content: space-between;
+}
+.classic-pic{
+  width: 416px;
+  height: 416px;
+}
+.classic-p{
+  font-size: 48px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color:#AA0601;
+  text-align: center;
+}
+.co-branding{
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+  background-size: cover;
+  width: 100%;
+  height: 608px;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.branding-title{
+  font-size: 48px;
+  font-weight: 700;
+  color:#ffffff;
+  padding-bottom: 48px;
+}
+.branding-ul{
+  display: flex;
+}
+.branding-pic{
+  width: 648px;
+  height: 240px;
+  display: block;
+}
+.brand-name{
+  color:#AA0601;
+  background-color: #ffffff;
+  padding: 8px 201px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 48px;
+}
+.recommend{
+  padding:80px 0;
+}
+.recommend-title{
+  color:#650300;
+  font-size: 48px;
+  font-weight: 700;
+  padding-bottom: 48px;
+  text-align: center;
+}
+.recommend-ul{
+  display: flex;
+  justify-content: space-between;
+}
+.recommend-li{
+  width:306px;
+  border:1px solid #DEE2E6;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px #DEE2E6;
+}
+.wrap{
+  padding:0 16px 16px 16px;
+}
+.recommend-pic{
+  width: 306px;
+  height: 306px;
+  padding-bottom: 16px;
+}
+.customer{
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+.message{
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 72px;
+}
+.date{
+  font-size: 14px;
+  font-weight: 400;
+  color:#707070;
+}
+.contact{
+  background-color: #FBF2F2;
+  padding:80px 0;
+}
+.contact-wrap{
+  width: 636px;
+}
+.contact-wrap h4{
+  font-size: 48px;
+  font-weight: 700;
+  color:#650300;
+  padding-bottom: 48px;
+  text-align: center;
+}
+.contact-wrap p{
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  text-align: left;
+}
+.form{
+  text-decoration: none;
+  width: 636px;
+  height: 36px;
+  background-color: #FBF2F2;
+  margin-bottom: 16px;
+}
+.checkbox{
+  display:inline-block;
+  width: 24px;
+  height: 24px;
+}
+.mb-48{
+  margin-bottom: 48px;
+}
+.tac{
+  text-align: center;
+}
+.send-btn{
+  background-color: #AA0601;
+  color:#ffffff;
+  padding: 16px 176px;
+  text-align: center;
+  text-decoration: none;
+}
+.footer{
+  background-color: #AA0601;
+  color:#FFFFFF;
+  padding-top: 48px;
+}
+.footer-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-ul{
+  display: flex;
+}
+.list-li{
+  font-size: 16px;
+  font-weight: 400;
+  padding-right: 48px;
+}
+.media-ul{
+  display: flex;
+}
+.media-li{
+  width: 48px;
+  height: 48px;
+  margin-left: 32px;
+}
+.info{
+  font-size: 36px;
+  font-weight: 400;
+}
+.copyright{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  align-items: center;
+}
+.left p{
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+.footer-icon{
+  width: 36px;
+  height: 36px;
+}
+.bb{
+  border-top:3px solid rgba(255,255,255,0.3);
+}
+.right{
+  display: flex;
+}
+.right li{
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 48px;
+}
+
+@media(max-width:768px){
+  body{
+    max-width:768px;
+    margin:0 auto;
+  }
+  .container{
+    max-width:696px;
+  }
+  .intro-ul{
+    flex-wrap: wrap;
+  }
+  .classic-ul{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .classic-li{
+    padding-bottom: 24px;
+  }
+  .branding-ul{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .branding-li{
+    padding-bottom: 24px;
+  }
+  .co-branding{
+    height: 960px;
+  }
+  .recommend-ul{
+    flex-wrap: wrap;
+  }
+  .recommend-li{
+    margin-bottom: 24px;
+  }
+  .media-li{
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+  }
+}
