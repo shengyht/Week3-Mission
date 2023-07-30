@@ -69,7 +69,9 @@ body{
   width:1296px;
   margin: 0 auto;
 }
-
+a{
+  text-decoration: none;
+}
 .header{
   background-color: #AA0601;
 }
@@ -92,6 +94,9 @@ body{
   color:#ffff;
   font-size: 16px;
   font-weight: 400;
+}
+.header-li:hover{
+  font-weight: 700;
 }
 .banner{
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
@@ -123,6 +128,10 @@ body{
   color:#ffffff;
   padding:6px 12px;
   text-decoration: none;
+}
+.buy:hover{
+  background-color: #ffffff;
+  color:#AA0601;
 }
 .intro{
   display: flex;
@@ -175,6 +184,14 @@ body{
   width: 416px;
   height: 416px;
 }
+.pic-wrap{
+  width: 410px;
+  height: 410px;
+  overflow: hidden;
+}
+.classic-pic:hover{
+  transform: scale(1.2);
+}
 .classic-p{
   font-size: 48px;
   font-family: 'Roboto', sans-serif;
@@ -182,6 +199,9 @@ body{
   font-style: italic;
   color:#AA0601;
   text-align: center;
+}
+.classic-p:hover{
+  font-size: 36px;
 }
 .co-branding{
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
@@ -206,6 +226,14 @@ body{
   height: 240px;
   display: block;
 }
+.branding-pic:hover{
+  transform: scale(1.2);
+}
+.brand-wrap{
+  width: 648px;
+  height: 235px;
+  overflow: hidden;
+}
 .brand-name{
   color:#AA0601;
   background-color: #ffffff;
@@ -214,6 +242,16 @@ body{
   font-weight: 900;
   font-style: italic;
   font-size: 48px;
+}
+.brand-name-wrap{
+  width: 648px;
+  height: 88px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.brand-name:hover{
+  border:9px solid #AA0601;
+  font-size: 36px;
 }
 .recommend{
   padding:80px 0;
@@ -279,9 +317,14 @@ body{
   text-align: left;
 }
 .form{
-  text-decoration: none;
   width: 636px;
   height: 36px;
+  background-color: #FBF2F2;
+  margin-bottom: 16px;
+}
+.feedback{
+  width: 636px;
+  height: 136px;
   background-color: #FBF2F2;
   margin-bottom: 16px;
 }
@@ -303,6 +346,10 @@ body{
   text-align: center;
   text-decoration: none;
 }
+.send-btn:hover{
+  background-color: #ffffff;
+  color:#AA0601;
+}
 .footer{
   background-color: #AA0601;
   color:#FFFFFF;
@@ -320,6 +367,10 @@ body{
   font-size: 16px;
   font-weight: 400;
   padding-right: 48px;
+  color:#FFFFFF;
+}
+.list-li:hover{
+  font-weight: 700;
 }
 .media-ul{
   display: flex;
