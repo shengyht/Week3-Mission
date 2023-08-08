@@ -227,6 +227,7 @@ a{
   width: 648px;
   height: 240px;
   display: block;
+  object-fit: cover;
 }
 .branding-pic:hover{
   transform: scale(1.2);
@@ -501,12 +502,41 @@ a{
   .classic-li{
     padding-bottom: 24px;
   }
+  .pic-wrap{
+    width: 340px;
+    height: 340px;
+  }
+  .classic{
+    padding:40px 0;
+  }
+  .classic-pic{
+    width: 348px;
+    height: 348px;
+  }
   .co-branding h2{
     font-size: 24px;
   }
+  .branding-li{
+    width: 348px;
+  }
+  .brand-wrap{
+    width: 340px;
+    height: 239px;
+  }
+  .branding-pic{
+    width: 348px;
+    height: 240px;
+  }
+  .brand-name-wrap{
+    width: 340px;
+    height: 80px;
+  }
   .brand-name{
-    font-size: 48px;
+    font-size: 36px;
     padding: 8px 50px;
+  }
+  .brand-name:hover{
+    border:5px solid #AA0601;
   }
   .recommend{
     padding:40px 0;
