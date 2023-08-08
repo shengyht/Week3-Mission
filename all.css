@@ -55,6 +55,7 @@ table {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 
 *, * ::before, *::after {
@@ -62,12 +63,13 @@ img {
           box-sizing: border-box;
 }
 body{
-  font-family: "Source Han Sans TW";
+  font-family: 'Roboto,Noto Sans TC,sans-serif';
   line-height: 1.5;
 }
 .container{
   width:1296px;
   margin: 0 auto;
+  padding:0 12px;
 }
 a{
   text-decoration: none;
@@ -93,7 +95,6 @@ a{
   margin-left: 64px;
   color:#ffff;
   font-size: 16px;
-  font-weight: 400;
 }
 .header-li:hover{
   font-weight: 700;
@@ -101,8 +102,10 @@ a{
 .banner{
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
   background-size: cover;
-  width:100%;
-  height: 787px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width:100%;
+  display: block;
 }
 .slogan{
   display: flex;
@@ -110,11 +113,10 @@ a{
   align-items: flex-end;
   justify-content: center;
   text-align: right;
-  padding-top: 296px;
+  height: 787px;
 }
 .slogan p{
   color:#650300;
-  font-weight: 400;
   font-size: 36px;
 
 }
@@ -136,8 +138,7 @@ a{
 .intro{
   display: flex;
   flex-direction: column;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding:80px 0;
   background-color: #FBF2F2;
   text-align: center;
 }
@@ -154,6 +155,10 @@ a{
 .intro-li{
   width:306px;
 }
+.intro-pic{
+  width: 83.83px;
+  height: 83.83px;
+}
 .intro-li h3{
   font-size: 24px;
   font-weight: 700;
@@ -162,7 +167,6 @@ a{
 }
 .intro-li p{
   font-size: 16px;
-  font-weight: 400;
   text-align: left;
 }
 .classic{
@@ -194,7 +198,6 @@ a{
 }
 .classic-p{
   font-size: 48px;
-  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-style: italic;
   color:#AA0601;
@@ -207,7 +210,6 @@ a{
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
   background-size: cover;
   width: 100%;
-  height: 608px;
   text-align: center;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -231,14 +233,12 @@ a{
 }
 .brand-wrap{
   width: 648px;
-  height: 235px;
   overflow: hidden;
 }
 .brand-name{
   color:#AA0601;
   background-color: #ffffff;
   padding: 8px 201px;
-  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-style: italic;
   font-size: 48px;
@@ -268,7 +268,7 @@ a{
   justify-content: space-between;
 }
 .recommend-li{
-  width:306px;
+  width:23%;
   border:1px solid #DEE2E6;
   border-radius: 4px;
   box-shadow: 0 2px 6px #DEE2E6;
@@ -277,11 +277,15 @@ a{
   padding:0 16px 16px 16px;
 }
 .recommend-pic{
-  width: 306px;
+  width: 100%;
   height: 306px;
   padding-bottom: 16px;
+  object-fit: cover;
 }
-.customer{
+.m16{
+  margin: 16px;
+}
+.name{
   font-size: 16px;
   font-weight: 500;
   padding-bottom: 8px;
@@ -293,15 +297,16 @@ a{
 }
 .date{
   font-size: 14px;
-  font-weight: 400;
   color:#707070;
+  padding-left: 16px;
+  padding-bottom: 16px;
 }
 .contact{
   background-color: #FBF2F2;
   padding:80px 0;
 }
 .contact-wrap{
-  width: 636px;
+  width: 45%;
 }
 .contact-wrap h4{
   font-size: 48px;
@@ -312,18 +317,17 @@ a{
 }
 .contact-wrap p{
   font-size: 20px;
-  font-weight: 400;
   padding-bottom: 20px;
   text-align: left;
 }
 .form{
-  width: 636px;
+  width: 100%;
   height: 36px;
   background-color: #FBF2F2;
   margin-bottom: 16px;
 }
 .feedback{
-  width: 636px;
+  width: 100%;
   height: 136px;
   background-color: #FBF2F2;
   margin-bottom: 16px;
@@ -365,7 +369,6 @@ a{
 }
 .list-li{
   font-size: 16px;
-  font-weight: 400;
   padding-right: 48px;
   color:#FFFFFF;
 }
@@ -382,7 +385,6 @@ a{
 }
 .info{
   font-size: 36px;
-  font-weight: 400;
 }
 .copyright{
   display: flex;
@@ -393,8 +395,6 @@ a{
 }
 .left p{
   font-size: 16px;
-  font-family: "Roboto";
-  font-weight: 400;
 }
 .footer-icon{
   width: 36px;
@@ -413,12 +413,8 @@ a{
 }
 
 @media(max-width:768px){
-  body{
-    max-width:768px;
-    margin:0 auto;
-  }
   .container{
-    max-width:696px;
+    width:90%;
   }
   .intro-ul{
     flex-wrap: wrap;
@@ -445,10 +441,124 @@ a{
   }
   .recommend-li{
     margin-bottom: 24px;
+    width:48%
   }
   .media-li{
     width: 40px;
     height: 40px;
     margin-left: 16px;
+  }
+}
+@media(max-width:375px){
+  .container{
+    width:372px;
+    padding:0 12px;
+  }
+  .nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo{
+    margin-bottom: 16px;
+    margin-right: auto;
+  }
+  .header-ul{
+    display: flex;
+    flex-wrap: wrap;
+    width:375px;
+  }
+  .w-border{
+    border:1px solid #ffffff;
+    width: 187px;
+    height: 48px;
+  }
+  .banner{
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+    background-size:cover;
+    max-width:100%;
+    height: 396px;
+    object-fit: cover;
+  }
+  .slogan{
+    display: flex;
+    flex-direction: column;
+    height: 396px;
+  }
+  .slogan p{
+    font-size: 16px;
+  }
+  .slogan h2{
+    font-size: 24px;
+  }
+  .intro-li{
+    width: 100%;
+    padding-bottom: 36px;
+  }
+  .intro h2{
+    font-size: 24px;
+  }
+  .classic-li{
+    padding-bottom: 24px;
+  }
+  .co-branding h2{
+    font-size: 24px;
+  }
+  .brand-name{
+    font-size: 48px;
+    padding: 8px 50px;
+  }
+  .recommend{
+    padding:40px 0;
+  }
+  .recommend-title{
+    font-size: 24px;
+  }
+  .recommend-ul{
+    flex-wrap: wrap;
+  }
+  .recommend-li{
+    width: 100%;
+  }
+  .mb-48{
+    margin-bottom: 10px;
+  }
+  .send-btn{
+    padding: 16px 142px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .tac{
+    padding-top: 24px;
+  }
+  .list-ul{
+    display: none;
+  }
+  .media-ul{
+    padding-top: 0;
+  }
+  .media-li{
+    width: 24px;
+    height: 24px;
+  }
+  .info{
+    font-size: 16px;
+  }
+  .copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .right{
+    flex-direction: column;
+    font-size: 16px;
+    padding-top: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .right li{
+    padding-bottom: 8px;
+    margin-right: auto;
   }
 }
