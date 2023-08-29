@@ -63,11 +63,11 @@ img {
           box-sizing: border-box;
 }
 body{
-  font-family: 'Roboto,Noto Sans TC,sans-serif';
+  font-family: Roboto,"Noto Sans TC",sans-serif;
   line-height: 1.5;
 }
 .container{
-  width:1296px;
+  max-width:1296px;
   margin: 0 auto;
   padding:0 12px;
 }
@@ -76,12 +76,15 @@ a{
 }
 .header{
   background-color: #AA0601;
+  padding:16px 0;
 }
 .nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:16px 0;
+  max-width:1296px;
+  margin: 0 auto;
+  padding:0 12px;
 }
 .logo{
   width: 80px;
@@ -89,10 +92,11 @@ a{
 }
 .header-ul{
   display: flex;
+  justify-content: space-between;
+  width: 40%;
 }
 .header-li{
   text-decoration: none;
-  margin-left: 64px;
   color:#ffff;
   font-size: 16px;
 }
@@ -104,8 +108,6 @@ a{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  max-width:100%;
-  display: block;
 }
 .slogan{
   display: flex;
@@ -153,11 +155,13 @@ a{
   justify-content: space-between;
 }
 .intro-li{
-  width:306px;
+  width:50%;
+  padding: 0 12px;
 }
 .intro-pic{
   width: 83.83px;
   height: 83.83px;
+  margin-bottom: 24px;
 }
 .intro-li h3{
   font-size: 24px;
@@ -170,8 +174,7 @@ a{
   text-align: left;
 }
 .classic{
-  padding-top:80px;
-  padding-bottom: 80px;
+  padding: 80px 0;
 }
 .classic-title{
   text-align: center;
@@ -184,13 +187,17 @@ a{
   display: flex;
   justify-content: space-between;
 }
+.classic-li{
+  width: 100%;
+  text-align: center;
+}
 .classic-pic{
-  width: 416px;
+  max-width: 100%;
   height: 416px;
+  object-fit: cover;
 }
 .pic-wrap{
-  width: 410px;
-  height: 410px;
+  width: 95%;
   overflow: hidden;
 }
 .classic-pic:hover{
@@ -204,12 +211,11 @@ a{
   text-align: center;
 }
 .classic-p:hover{
-  font-size: 36px;
+  font-size:40px;
 }
 .co-branding{
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
   background-size: cover;
-  width: 100%;
   text-align: center;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -224,29 +230,27 @@ a{
   display: flex;
 }
 .branding-pic{
-  width: 648px;
+  max-width:100%;
   height: 240px;
-  display: block;
   object-fit: cover;
 }
 .branding-pic:hover{
   transform: scale(1.2);
 }
 .brand-wrap{
-  width: 648px;
+  width: 100%;
   overflow: hidden;
 }
 .brand-name{
   color:#AA0601;
   background-color: #ffffff;
-  padding: 8px 201px;
+  text-align: center;
   font-weight: 900;
   font-style: italic;
   font-size: 48px;
 }
 .brand-name-wrap{
-  width: 648px;
-  height: 88px;
+  width: 100%;
   overflow: hidden;
   background-color: #ffffff;
 }
@@ -307,7 +311,7 @@ a{
   padding:80px 0;
 }
 .contact-wrap{
-  width: 45%;
+  width: 60%;
 }
 .contact-wrap h4{
   font-size: 48px;
@@ -319,7 +323,7 @@ a{
 .contact-wrap p{
   font-size: 20px;
   padding-bottom: 20px;
-  text-align: left;
+  text-align: center;
 }
 .form{
   width: 100%;
@@ -327,11 +331,11 @@ a{
   background-color: #FBF2F2;
   margin-bottom: 16px;
 }
-.feedback{
-  width: 100%;
-  height: 136px;
+textarea{
+  width:100%;
   background-color: #FBF2F2;
-  margin-bottom: 16px;
+  color:#707070;
+  border: 2px solid black;
 }
 .checkbox{
   display:inline-block;
@@ -347,7 +351,8 @@ a{
 .send-btn{
   background-color: #AA0601;
   color:#ffffff;
-  padding: 16px 176px;
+  width:50%;
+  height: 56px;
   text-align: center;
   text-decoration: none;
 }
@@ -378,14 +383,23 @@ a{
 }
 .media-ul{
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .media-li{
-  width: 48px;
   height: 48px;
-  margin-left: 32px;
+  width: 100%;
+  padding-left: 32px;
 }
 .info{
   font-size: 36px;
+  display: block;
+  color:#ffffff;
+  padding-bottom: 8px;
+}
+.footer-icon{
+  vertical-align:middle;
+  padding-right: 22px;
 }
 .copyright{
   display: flex;
@@ -397,25 +411,31 @@ a{
 .left p{
   font-size: 16px;
 }
-.footer-icon{
-  width: 36px;
-  height: 36px;
-}
 .bb{
   border-top:3px solid rgba(255,255,255,0.3);
 }
 .right{
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .right li{
   font-size: 14px;
   font-weight: 400;
   padding-left: 48px;
 }
+.right li a{
+  color:#ffffff;
+}
 
-@media(max-width:768px){
+@media(max-width:992px){
   .container{
-    width:90%;
+    max-width:960px;
+    padding:0 16px;
+  }
+  
+  .header-ul{
+    width: 50%;
   }
   .intro-ul{
     flex-wrap: wrap;
@@ -426,6 +446,11 @@ a{
   }
   .classic-li{
     padding-bottom: 24px;
+    width: 100%;
+  }
+  .pic-wrap{
+    width: 100%;
+    overflow: hidden;
   }
   .branding-ul{
     flex-wrap: wrap;
@@ -445,33 +470,45 @@ a{
     width:48%
   }
   .media-li{
-    width: 40px;
+    width: 80%;
     height: 40px;
     margin-left: 16px;
   }
+  .pb-49{
+    padding-bottom: 49px;
+  }
 }
-@media(max-width:375px){
+@media(max-width:675px){
   .container{
-    width:372px;
+    max-width:100%;
     padding:0 12px;
+  }
+  .header{
+    padding:0px;
   }
   .nav{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width:100%;
+    margin: 0px;
+    padding:0px;
   }
   .logo{
-    margin-bottom: 16px;
-    margin-right: auto;
+    margin: 16px;
+    align-self: start;
   }
   .header-ul{
     display: flex;
     flex-wrap: wrap;
-    width:375px;
+    width: 100%;
+  }
+  .header-li{
+    margin-left: 40%;
   }
   .w-border{
     border:1px solid #ffffff;
-    width: 187px;
+    width: 50%;
     height: 48px;
   }
   .banner{
@@ -492,6 +529,10 @@ a{
   .slogan h2{
     font-size: 24px;
   }
+  .intro-ul{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .intro-li{
     width: 100%;
     padding-bottom: 36px;
@@ -499,41 +540,20 @@ a{
   .intro h2{
     font-size: 24px;
   }
+  .intro-pic{
+    text-align: center;
+  }
+  .classic-ul{
+    justify-content: center;
+  }
   .classic-li{
     padding-bottom: 24px;
-  }
-  .pic-wrap{
-    width: 340px;
-    height: 340px;
   }
   .classic{
     padding:40px 0;
   }
-  .classic-pic{
-    width: 348px;
-    height: 348px;
-  }
   .co-branding h2{
     font-size: 24px;
-  }
-  .branding-li{
-    width: 348px;
-  }
-  .brand-wrap{
-    width: 340px;
-    height: 239px;
-  }
-  .branding-pic{
-    width: 348px;
-    height: 240px;
-  }
-  .brand-name-wrap{
-    width: 340px;
-    height: 80px;
-  }
-  .brand-name{
-    font-size: 36px;
-    padding: 8px 50px;
   }
   .brand-name:hover{
     border:5px solid #AA0601;
@@ -554,7 +574,7 @@ a{
     margin-bottom: 10px;
   }
   .send-btn{
-    padding: 16px 142px;
+    width: 100%;
     text-align: center;
     text-decoration: none;
   }
@@ -568,11 +588,14 @@ a{
     padding-top: 0;
   }
   .media-li{
-    width: 24px;
-    height: 24px;
+    padding-left: 0px;
+    width: 70%;
   }
   .info{
     font-size: 16px;
+  }
+  .bb{
+    flex-wrap: wrap;
   }
   .copyright{
     display: flex;
@@ -589,6 +612,7 @@ a{
   }
   .right li{
     padding-bottom: 8px;
-    margin-right: auto;
+    margin-right:0;
+    padding-left: 0px;
   }
 }
