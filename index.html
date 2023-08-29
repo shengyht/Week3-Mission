@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="header">
-        <div class="nav container">
+        <div class="nav">
             <h1><a href="#"><img class="logo" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true" alt="logo"></a></h1>
             <ul class="header-ul">
                 <li class="w-border"><a href="#" class="header-li">系列鏡框</a></li>
@@ -34,12 +34,12 @@
         <div class="container">
             <h2>用專業的心，做專業的事</h2>
             <ul class="intro-ul">
-                <li class="intro-li">
+                <li class="intro-li pb-49">
                     <img class="intro-pic" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-1.png?raw=true" alt="money">
                     <h3>單一價格</h3>
                     <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
                 </li>
-                <li class="intro-li">
+                <li class="intro-li pb-49">
                     <img class="intro-pic" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-2.png?raw=true" alt="time">
                     <h3>20分鐘即可取件</h3>
                     <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快20分鐘即可完成。</p>
@@ -57,34 +57,30 @@
             </ul>
         </div>
     </div>
-    <div class="classic container">
-        <h2 class="classic-title">經典系列鏡框</h2>
+    <div class="classic">
+        <div class="container">
+            <h2 class="classic-title">經典系列鏡框</h2>
         <ul class="classic-ul">
             <li class="classic-li">
-                <a href="#">
                 <div class="pic-wrap">
-                    <img class="classic-pic" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-1.png?raw=true" alt="OPTICAL">
+                    <a href="#"><img class="classic-pic" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-1.png?raw=true" alt="OPTICAL"></a>
                 </div>
-                <p class="classic-p">OPTICAL</p>
-            </a>
+                <p><a href="#" class="classic-p">OPTICAL</a></p>
             </li>
             <li class="classic-li">
-                <a href="#">
                 <div class="pic-wrap">
-                    <img class="classic-pic" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-2.png?raw=true" alt="SUNGLASSES">
+                    <a href="#"><img class="classic-pic" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-2.png?raw=true" alt="SUNGLASSES"></a>
                 </div>
-                <p class="classic-p">SUNGLASSES</p>
-                </a>
+                <p><a href="#" class="classic-p">SUNGLASSES</a></p>
             </li>
-            <li>
-                <a href="#">
+            <li class="classic-li">
                 <div class="pic-wrap">
-                    <img class="classic-pic" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-3.png?raw=true" alt="FUNCTIONA">
+                    <a href="#"><img class="classic-pic" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-3.png?raw=true" alt="FUNCTIONA"></a>
                 </div>
-                <p class="classic-p">FUNCTIONAL</p>
-                </a>
+                <p><a href="#" class="classic-p">FUNCTIONAL</a></p>
             </li>
         </ul>
+        </div>
     </div>
     <div class="co-branding">
         <div class="container">
@@ -114,8 +110,9 @@
             </ul>
         </div>
     </div>
-    <div class="recommend container">
-        <h2 class="recommend-title">顧客推薦</h2>
+    <div class="recommend">
+        <div class="container">
+            <h2 class="recommend-title">顧客推薦</h2>
         <ul class="recommend-ul container">
             <li class="recommend-li">
                 <img class="recommend-pic" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-1.png?raw=true" alt="Jessy">
@@ -150,24 +147,37 @@
                 <p class="date">2020/10/31</p>
             </li>
         </ul>
+        </div>
     </div>
     <div class="contact">
         <div class="contact-wrap container">
             <h4>聯絡我們</h4>
             <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-            <label for="person">姓名</label>
-            <input class="form" type="text" placeholder="陳小明" name="person" id="person">
-            <label for="tel" class="form">聯絡電話</label>
-            <input class="form" type="tel" placeholder="0912-345-678" name="tel" id="tel">
-            <label for="mail">電子郵件</label>
-            <input class="form" type="email" placeholder="example@email.com" name="mail" id="mail">
-            <label for="textarea">意見反應</label>
-            <input class="feedback" type="text" placeholder="請輸入您的意見" name="feedback" id="feedback">
-            <input class="checkbox mb-48" type="checkbox" id="checkbox" name="checkbox">
-            <label for="checkbox">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
-            <div class="tac">
-                <button type="submit" class="send-btn">確認送出</button>
-            </div>
+            <form action="" method="get" class="form-info">
+                <div class="form-info">
+                    <label for="person">姓名</label>
+                    <input class="form" type="text" placeholder="陳小明" name="person" id="person">
+                </div>
+                <div class="form-info">
+                    <label for="tel" class="form">聯絡電話</label>
+                    <input class="form" type="tel" placeholder="0912-345-678" name="tel" id="tel">
+                </div>
+                <div class="form-info">
+                    <label for="mail">電子郵件</label>
+                    <input class="form" type="email" placeholder="example@email.com" name="mail" id="mail">
+                </div>
+                <div class="form-info">
+                    <label for="textarea">意見反應</label>
+                    <textarea id="feedback" name="feedback" rows="8" cols="80">請輸入您的意見</textarea>
+                </div>
+                <div class="form-info">
+                    <input class="checkbox mb-48" type="checkbox" id="checkbox" name="checkbox">
+                    <label for="checkbox">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+                    <div class="tac">
+                        <button type="submit" class="send-btn">確認送出</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
     <div class="footer">
@@ -190,8 +200,8 @@
                     </ul>
                 </div>
             </div>
-            <p class="info"><span class="material-icons-outlined footer-icon">phone</span>0800-000-00</p>
-            <p class="info"><span class="material-icons-outlined footer-icon">email</span>glasses@business.com</p>
+            <a class="info" href="tel:0800-000-00"><span class="material-icons-outlined footer-icon">phone</span>0800-000-00</a>
+            <a class="info" href="mailto:glasses@business.com"><span class="material-icons-outlined footer-icon">email</span>glasses@business.com</a>
             <div class="bb">
                 <ul class="copyright">
                     <li class="left">
@@ -199,8 +209,8 @@
                     </li>
                     <li>
                         <ul class="right">
-                            <li>隱私權政策</li>
-                            <li>服務條款</li>
+                            <li><a href="#">隱私權政策</a></li>
+                            <li><a href="#">服務條款</a></li>
                         </ul>
                     </li>
                 </ul>
